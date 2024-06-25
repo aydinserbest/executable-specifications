@@ -3,7 +3,7 @@ package starter;
 
 import org.junit.Test;
 
-public class SimpleJunit5Test {
+public class SimpleJunit4Test {
     @Test
     public void mySimpleTest() {
         // My test logic here
