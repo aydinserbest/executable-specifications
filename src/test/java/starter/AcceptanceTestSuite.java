@@ -10,7 +10,7 @@ import static io.cucumber.junit.platform.engine.Constants.GLUE_PROPERTY_NAME;
 @Suite
 @IncludeEngines("cucumber")
 @SelectClasspathResource("features")
-@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "starter")
+//@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "starter") // no need unless works from command line
 @ConfigurationParameter(key = "cucumber.publish.enabled", value = "true")
 
 public class AcceptanceTestSuite {
