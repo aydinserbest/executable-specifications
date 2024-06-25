@@ -64,6 +64,12 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.22.1</version>
                 <configuration>
+                    <!--
+                    <skipTests>true</skipTests>
+                    When true, tests are skipped.
+                    Use true to compile only, without running tests
+                    and without generating reports. -->
+
                     <includes>
                         <include>**/*TestSuite.java</include>
                     </includes>
