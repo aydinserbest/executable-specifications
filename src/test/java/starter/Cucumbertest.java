@@ -1,8 +1,8 @@
 package starter;
 
+import io.cucumber.junit.platform.engine.Cucumber;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-@ExtendWith(CucumberExtension.class)
+@Cucumber
 public class Cucumbertest {
-
 }
