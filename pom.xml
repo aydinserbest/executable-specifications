@@ -100,7 +100,7 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.22.1</version>
                 <configuration>
-                    <skipITs>true</skipITs>
+                    <skipITs>false</skipITs>
                     <includes>
                         <include>**/*TestSuite.java</include>
                     </includes>
