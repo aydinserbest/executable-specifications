@@ -51,10 +51,15 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.3.0</version>
                 <configuration>
+                    <groups>functional</groups>
+                    <!--
                     <properties>
+
                         <includeTags>functional</includeTags>
                         <excludeTags>non-functional</excludeTags>
+
                     </properties>
+                    -->
                 </configuration>
 
             </plugin>
