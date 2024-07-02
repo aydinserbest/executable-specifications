@@ -63,6 +63,13 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.3.0</version>
                 <configuration>
+
+                    <properties>
+                        <includeTags>functional</includeTags>
+                        <excludeTags>non-functional</excludeTags>
+                    </properties>
+
+
                     <!--
                     <groups>standardAssertions</groups>
                     <excludedGroups>hamcrest</excludedGroups> -->
@@ -76,6 +83,11 @@
                         <exclude>**/TestSquare.java</exclude>
                     </excludes>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>3.3.0</version>
             </plugin>
         </plugins>
     </build>
