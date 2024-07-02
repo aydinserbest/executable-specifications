@@ -52,19 +52,34 @@
                 <version>3.3.0</version>
                 <configuration>
                     <groups>functional</groups>
-                    <!--
-                    <properties>
-
-                        <includeTags>functional</includeTags>
-                        <excludeTags>non-functional</excludeTags>
-
-                    </properties>
-                    -->
+                    <excludedGroups>non-functional</excludedGroups>
+                    <skipTests>true</skipTests>
                 </configuration>
-
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>3.3.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <includes>
+                        <include>**/FirstIntegrationTest.java</include>
+                    </includes>
+                    <excludes>
+                        <exclude>**/SecondIntegrationTest.java</exclude>
+                    </excludes>
+                </configuration>
             </plugin>
         </plugins>
     </build>
+    <!--
     <reporting>
         <plugins>
             <plugin>
@@ -74,4 +89,5 @@
             </plugin>
         </plugins>
     </reporting>
+    -->
 </project>
