@@ -2,8 +2,10 @@ package starter;
 
 
 import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+@DisplayName("DisabledJunit5Test")
 @Disabled("all tests in this class disabled")
 public class DisabledJunit5Test {
     @Test

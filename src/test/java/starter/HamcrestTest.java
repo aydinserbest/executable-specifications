@@ -1,11 +1,13 @@
 package starter;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+@DisplayName("Hamcrest Test")
 @Tag("hamcrest")
 public class HamcrestTest {
     @Test

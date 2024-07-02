@@ -2,8 +2,10 @@ package starter;
 
 
 import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+@DisplayName("SimpleJunit5Test")
 public class SimpleJunit5Test {
     @Test
     void mySimpleTest1() {
