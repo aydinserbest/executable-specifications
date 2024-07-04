@@ -1,0 +1,5 @@
+Name, Category, Base Price, Tax Rate, In Stock 
+Smartwatch, Electronics, 200, 0.18, true 
+Coffee Mug, Home, 12, 0.1, true 
+Noise-Canceling Headphones, Electronics, 350, 0.18, false
+
