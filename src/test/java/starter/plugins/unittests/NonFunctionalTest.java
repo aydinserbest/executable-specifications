@@ -1,4 +1,4 @@
-package starter.unittests;
+package starter.plugins.unittests;
 
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;

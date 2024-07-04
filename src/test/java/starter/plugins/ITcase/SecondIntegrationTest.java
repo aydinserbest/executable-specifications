@@ -1,4 +1,4 @@
-package starter.ITcase;
+package starter.plugins.ITcase;
 
 import org.junit.jupiter.api.Test;
 
