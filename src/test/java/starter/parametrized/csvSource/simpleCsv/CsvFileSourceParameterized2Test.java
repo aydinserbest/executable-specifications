@@ -1,4 +1,4 @@
-package starter.parametrized.csvSource;
+package starter.parametrized.csvSource.simpleCsv;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
