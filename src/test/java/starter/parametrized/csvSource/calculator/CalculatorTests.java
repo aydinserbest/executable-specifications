@@ -31,6 +31,31 @@ public class CalculatorTests {
 //                () -> "Expected " + expectedResult + " but got " + calculator.add(first, second) + " for inputs: " + first + " + " + second);
     }
 }
+
+/*
+JUnit 5'te assertEquals metodu üç parametre alabilir:
+beklenen sonuç (expectedResult),
+gerçek sonuç (actualResult)
+ve bir hata mesajı.
+
+Parametreler
+expectedResult (beklenen sonuç): Testten beklenen değerdir.
+actualResult (gerçek sonuç): Test edilen metot tarafından döndürülen değerdir.
+hata mesajı (hata mesajı sağlayıcısı): Bu, test başarısız olursa görüntülenecek hata mesajıdır.
+Hata Mesajı Sağlayıcısı
+Kodunuzda hata mesajı sağlayıcısı olarak lambda ifadesi kullanılmış:
+
+java
+Copy code
+() -> first + " + " + second + " should equal " + expectedResult
+Bu lambda ifadesi şu şekilde çalışır:
+
+Lazy Evaluation (Geç Değerlendirme): Lambda ifadesi, test başarısız olursa hata mesajını oluşturur.
+Bu, performans açısından avantaj sağlar çünkü mesajın her zaman oluşturulması gerekmez;
+yalnızca test başarısız olursa oluşturulur.
+String Concatenation (String Birleştirme):
+Hata mesajında, first, second ve expectedResult değerleri birleştirilerek anlamlı bir hata mesajı oluşturulur.
+ */
     /*
     Java'da assert ifadesi, dilin kendisinde bulunan bir özelliktir ve herhangi bir dış kütüphaneye bağlı değildir. Java 1.4 sürümünden itibaren, assert ifadesi dilin bir parçası olarak eklenmiştir.
 
