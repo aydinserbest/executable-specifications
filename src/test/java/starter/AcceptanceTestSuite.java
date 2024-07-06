@@ -12,6 +12,6 @@ import static io.cucumber.core.options.Constants.PLUGIN_PROPERTY_NAME;
 @SelectClasspathResource("features")
 @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME,
         value = "io.cucumber.core.plugin.SerenityReporterParallel,pretty")
-//@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "org.starter")
+//@ConfigurationParameter(key = "cucumber.publish.enabled", value = "true")
 public class AcceptanceTestSuite {
 }

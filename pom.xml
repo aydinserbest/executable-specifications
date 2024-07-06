@@ -100,9 +100,11 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.22.1</version>
                 <configuration>
-                    <skipITs>false</skipITs>
                     <includes>
+                        <include>**/*Test.java</include>
+                        <include>**/Test*.java</include>
                         <include>**/*TestSuite.java</include>
+                        <include>**/When*.java</include>
                     </includes>
                 </configuration>
                 <executions>
