@@ -8,6 +8,7 @@ public class FunctionalTest {
 
     @Test
     void testOne() {
+
         System.out.println("Functional Test 1");
     }
 
